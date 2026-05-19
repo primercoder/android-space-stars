@@ -2,8 +2,10 @@
 
 Interactive 2D gravitational n-body simulation for Android. Tap to spawn stars that orbit and collide via Newtonian gravity, with glowing trails and color blending on merge.
 
-![Screenshot 1](asserts/stars_short1.png)
-![Screenshot 2](asserts/stars_short2.png)
+<p align="center">
+  <img src="asserts/stars_short1.png" width="45%" />
+  <img src="asserts/stars_short2.png" width="45%" />
+</p>
 
 ## Features
 
