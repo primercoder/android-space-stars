@@ -34,11 +34,22 @@ Interactive 2D gravitational n-body simulation for Android. Tap to spawn stars t
 - CMake 3.28+
 - Ninja
 
+### Setup SDL2
+
+The project requires SDL2 source at `app/jni/SDL/` (the NDK CMake build compiles it from source).
+
+```bash
+# Download SDL2
+curl -L https://github.com/libsdl-org/SDL/releases/download/release-2.30.11/SDL2-2.30.11.tar.gz -o /tmp/SDL2.tar.gz
+tar xzf /tmp/SDL2.tar.gz -C /tmp
+
+# Place it where the build expects it
+mv /tmp/SDL2-2.30.11 app/jni/SDL
+```
+
 ### Build release APK
 
 ```bash
-git clone <repo-url>
-cd stars
 ./gradlew assembleRelease
 ```
 
